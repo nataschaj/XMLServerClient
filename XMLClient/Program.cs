@@ -8,9 +8,10 @@ namespace XMLClient
 {
     class Program
     {
+        private const int port = 10002;
         static void Main(string[] args)
         {
-            Client klient = new Client();
+            Client klient = new Client(port);
             klient.Start();
         }
     }

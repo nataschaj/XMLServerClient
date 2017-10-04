@@ -13,6 +13,13 @@ namespace XMLClient
 {
     public class Client
     {
+
+        private int port;
+
+        public Client(int port)
+        {
+            this.port = port;
+        }
         public void Start()
         {
             Car publicCar = new Car();
@@ -20,16 +27,23 @@ namespace XMLClient
             publicCar.RegNo = "XMLCar23";
             publicCar.Color = "Blue";
 
-            TcpListener listener = new TcpListener(IPAddress.Loopback, 10002);
-            listener.Start();
+       
 
-            using(TcpClient tc = listener.AcceptTcpClient())
-            using (NetworkStream ns = tc.GetStream())
-            using (StreamWriter sw = new StreamWriter(ns))
+
+            using (TcpClient tclient = new TcpClient("locaholst", 10002))
+            using (Stream newstream = tclient.GetStream())
+            using (StreamWriter sw = new StreamWriter(newstream))
             {
-                XmlSerializer xmlSerial = new XmlSerializer(typeof(Car));
+                //XmlSerializer xmlSerial = new XmlSerializer(typeof(Car));
 
-                xmlSerial.Serialize(sw, publicCar);
+                //xmlSerial.Serialize(sw, publicCar);
+                XmlSerializer serializer = new XmlSerializer(typeof(Car));
+
+                StringWriter stringwrit = new StringWriter();
+                serializer.Serialize(stringwrit, publicCar);
+                
+                serializer.Serialize(sw, publicCar);
+                sw.Flush();
             }
         }
         }

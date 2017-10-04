@@ -8,9 +8,10 @@ namespace XMLServer
 {
     class Program
     {
+        private const int port = 10002;
         static void Main(string[] args)
         {
-            Server server = new Server();
+            Server server = new Server(port);
             server.Start();
         }
     }
