@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLServer", "XMLServer\XMLS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLClient", "XMLClient\XMLClient.csproj", "{0EA8F828-6757-4E96-9F66-AEED28B74621}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONClient", "JSONClient\JSONClient.csproj", "{E1775704-6C1B-48D1-9803-88C44DF5955E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONServer", "JSONServer\JSONServer.csproj", "{2A28E36C-8611-4CE2-BE72-CED4DB6B57BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0EA8F828-6757-4E96-9F66-AEED28B74621}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EA8F828-6757-4E96-9F66-AEED28B74621}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EA8F828-6757-4E96-9F66-AEED28B74621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1775704-6C1B-48D1-9803-88C44DF5955E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1775704-6C1B-48D1-9803-88C44DF5955E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1775704-6C1B-48D1-9803-88C44DF5955E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1775704-6C1B-48D1-9803-88C44DF5955E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A28E36C-8611-4CE2-BE72-CED4DB6B57BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A28E36C-8611-4CE2-BE72-CED4DB6B57BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A28E36C-8611-4CE2-BE72-CED4DB6B57BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A28E36C-8611-4CE2-BE72-CED4DB6B57BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

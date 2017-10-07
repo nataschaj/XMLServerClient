@@ -64,7 +64,7 @@ namespace XMLServer
                 XmlSerializer serializer = new XmlSerializer(typeof(Car)); //xml serialiserer car
 
                 Car bilen = (Car)serializer.Deserialize(sr);
-                Console.WriteLine($"From Client as Car object : {bilen}");
+                Console.WriteLine($"Objekt: {bilen}"); //From Client as Car object
             }
         }
     }
